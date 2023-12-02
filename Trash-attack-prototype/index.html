@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Trash Attack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--nav bar-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <!---Container is for it to shift a bit,the class name is long because it explains all the featues,the lg is for increasing and decreasing the view,collapse so it collapses on smaller screens-->
+    <div class="container">
+        <a href="#" class="navbar-brand">Trash Attack</a>
+
+        <button
+        class="navbar-toggler"
+        type="buton"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+        >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#recycle" class="nav-link">Recycle</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#leaderboad" class="nav-link" data-bs-toggle ="modal" data-bs-target = "#leaderboad">Leaderboard</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!--Showcase-->
+  <section>
+   <div class="bg-dark text-light p-5 p-lg=0 text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center
+        justify-content-between">
+            <div>
+                <h1>Embrace Circular Living,
+                    <span class="text-success">Transform Your City</span></h1>
+                <p class="lead my-4">Diverse communities engaged in circular practices, recycling, and participating in eco-friendly initiatives.</p>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block"  src="undraw_eco_conscious_re_r2bs.svg" alt="">
+        </div>
+    </div>
+  </div>
+  </section>
+
+  <!--NewsLetter-->
+  <section class="bg-success text-light p-5">
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0 ">Sign Up For Our Newsletter</h3>
+
+            <div class="input-group news-input">
+                <input type="text" class="form-control" placeholder="Enter Email" aria-label="Username"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+  </section>
+
+  <!--Boxes-->
+  <section class="p-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md">
+                <div class="card bg-dark text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                        <i class="bi bi-people"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Community Waste Competition
+                        </h3>
+                        <p class="card-text">
+                            Join our community in fun competitions.
+                            Together, we
+                            create a sense of community and environmental responsibility.
+                        </p>
+                        <a href="event.html" class="btn btn-success" >Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-success text-light">
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                        <i class="bi bi-trash"></i>
+                    </div>
+                    <h3 class="card-title mb-3">
+                        Illegal Dumping Reporting
+                    </h3>
+                    <p class="card-text">
+                        Report instances of illegal dumping with geotagging and photo uploads for swift action.
+                    </p>
+                    <a href="#" class="btn btn-dark" data-bs-toggle ="modal" data-bs-target = "#enroll"> Report</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                        <i class="bi bi-table"></i>
+                    </div>
+                    <h3 class="card-title mb-3">
+                        Garbage Collect Timetable
+                    </h3>
+                    <p class="card-text">
+                        Never miss a waste collection day with a personalized timetable and helpful reminders.
+                    </p>
+                    <a href="#" class="btn btn-success">View</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Services -->
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Leaderboard-->
+<div class="modal fade" id="leaderboad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="wrapper">
+	<div class="lboard_section">
+		<div class="lboard_tabs">
+			<div class="tabs">
+				<ul>
+
+					<li class="active" data-li="month">Month</li>
+					<li data-li="year">Year</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="lboard_wrap">
+			<div class="lboard_item month" style="display: block;">
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>1.</span> Bogkoni Primary School</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 95%"></div>
+						</div>
+					</div>
+					<div class="points">
+						1195 points
+					</div>
+				</div>
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>2.</span>Esikhisini Primary School</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 80%"></div>
+						</div>
+					</div>
+					<div class="points">
+						1185 points
+					</div>
+				</div>
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>3.</span>Bathokwa Primary School</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 70%;"></div>
+						</div>
+					</div>
+					<div class="points">
+						1160 points
+					</div>
+				</div>
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>4.</span>Phuthaditshaba Primary School</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 50%"></div>
+						</div>
+					</div>
+					<div class="points">
+						1130 points
+					</div>
+				</div>
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>5.</span>Rosina Primary School</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 30%"></div>
+						</div>
+					</div>
+					<div class="points">
+						1110 points
+					</div>
+				</div>
+			</div>
+			<div class="lboard_item year" style="display: none;">
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>1.</span>Thindisa Primary School</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 90%"></div>
+						</div>
+					</div>
+					<div class="points">
+						2195 points
+					</div>
+				</div>
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>2.</span>Soshanguve Primary School</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 85%"></div>
+						</div>
+					</div>
+					<div class="points">
+						2185 points
+					</div>
+				</div>
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>3.</span>Johnson</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 65%;"></div>
+						</div>
+					</div>
+					<div class="points">
+						2160 points
+					</div>
+				</div>
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>4.</span>Charles John</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 30%"></div>
+						</div>
+					</div>
+					<div class="points">
+						2130 points
+					</div>
+				</div>
+				<div class="lboard_mem">
+					<div class="name_bar">
+						<p><span>5.</span>Alex Mike</p>
+						<div class="bar_wrap">
+							<div class="inner_bar" style="width: 10%"></div>
+						</div>
+					</div>
+					<div class="points">
+						2110 points
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="scripts.js">
+
+        </script>
+</body>
+
+</html>
